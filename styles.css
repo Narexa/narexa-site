@@ -76,9 +76,8 @@ body {
     padding-bottom: 0rem;
     font-size: 1.3rem; 
     margin-bottom: 0.1rem;
-    background: linear-gradient(45deg, #ffffff, #7925c9, #d2bae9, #ffffff);
     background-size: 600% 600%;
-    color: transparent;
+    color: white;
     -webkit-background-clip: text;
     background-clip: text;
     animation: gradientAnimation 11s ease infinite;
