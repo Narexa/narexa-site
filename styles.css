@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'NohemiLight', sans-serif; 
+    background-color: #151717; 
+}
+
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #101010; 
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #404646;
+}
+
+.navbar a.active {
+    color: #ad55ff;
+}
+
+
+.about-page {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    padding: 0px; 
+}
+
+.about-content {
+    max-width: 300px; 
+    width: 100%;
+    text-align: center; 
+    color: white;
+    font-family: 'Robotoco', sans-serif; 
+}
+
+
+.about-content h2, .about-content h3 {
+    font-family: 'NohemiLight','Robotoco';
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
+    font-size: 1.3rem; 
+    margin-bottom: 0.1rem;
+    background: linear-gradient(45deg, #ffffff, #7925c9, #d2bae9, #ffffff);
+    background-size: 600% 600%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientAnimation 11s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+
+.about-content p {
+    font-size: 1rem; 
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+
+.button-group .button {
+    display: inline-block;
+    background-color: #10101000; 
+    color: white;
+    padding: 8px 12px; 
+    margin: 3px; 
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #373d3d;
+}
+
+/* Colors scheme adjusted */
+.button-group.languages .button {
+    color: #d18afe; 
+}
+
+.button-group.software .button {
+    color: #8555ff; 
+}
+
+.button-group.links .button {
+    color: #6555ff; 
+}
+
+.button-group .button:hover {
+    background-color: #ad55ff;
+}
+
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-left: 0px; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.splash-page {
+    background-image: url('nare.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+
+
+.page-indicator {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page-indicator .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-indicator .dot.active {
+    background-color: #ad55ff;
+}
+
+
+@font-face {
+    font-family: 'NohemiLight';
+    src: url('MonaspaceNeon-Bold.woff2') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
