@@ -18,7 +18,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background-color: #101010; 
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 25px;
     padding: 10px 20px;
     display: flex;
@@ -44,7 +44,8 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #404646;
+    background-color:rgba(255, 255, 255, 0.034);
+    
 }
 
 .navbar a.active {
