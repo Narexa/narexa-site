@@ -1,23 +1,31 @@
+:root {
+    --background-color: #151717; /* Default background color for light mode */
+    --navbar-color: var(--background-color); /* Navbar background color matches body */
+}
 
+[data-theme="dark"] {
+    --background-color: #151717; /* Dark mode background color */
+    --navbar-color: var(--background-color); /* Ensure navbar matches dark mode body color */
+}
+
+/* General resets and settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'NohemiLight', sans-serif; 
-    background-color: #151717; 
+    font-family: 'NohemiLight', sans-serif;
+    background-color: var(--background-color); /* Use the custom property */
 }
-
 
 .navbar {
     position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #101010; 
+    background-color: var(--navbar-color); /* Use the custom property */
     color: rgb(255, 255, 255);
     border-radius: 25px;
     padding: 10px 20px;
@@ -25,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Light outline to stand out */
 }
 
 .navbar ul {
@@ -44,37 +53,36 @@ body {
 }
 
 .navbar a:hover {
-    background-color:rgba(255, 255, 255, 0.034);
-    
+    background-color: rgba(255, 255, 255, 0.034);
 }
 
 .navbar a.active {
     color: #ad55ff;
 }
 
+/* Other styles remain unchanged */
 
 .about-page {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    padding: 0px; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
 }
 
 .about-content {
-    max-width: 300px; 
+    max-width: 300px;
     width: 100%;
-    text-align: center; 
+    text-align: center;
     color: white;
-    font-family: 'Robotoco', sans-serif; 
+    font-family: 'Robotoco', sans-serif;
 }
 
-
 .about-content h2, .about-content h3 {
-    font-family: 'NohemiLight','Robotoco';
+    font-family: 'NohemiLight', 'Robotoco';
     padding-top: 1.5rem;
     padding-bottom: 0rem;
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
     margin-bottom: 0.1rem;
     background-size: 600% 600%;
     color: white;
@@ -89,20 +97,18 @@ body {
     100% { background-position: 0% 0%; }
 }
 
-
 .about-content p {
-    font-size: 1rem; 
+    font-size: 1rem;
     font-weight: normal;
     margin-bottom: 1rem;
 }
 
-
 .button-group .button {
     display: inline-block;
-    background-color: #10101000; 
+    background-color: #10101000;
     color: white;
-    padding: 8px 12px; 
-    margin: 3px; 
+    padding: 8px 12px;
+    margin: 3px;
     border-radius: 20px;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -111,21 +117,20 @@ body {
 
 /* Colors scheme adjusted */
 .button-group.languages .button {
-    color: #d18afe; 
+    color: #d18afe;
 }
 
 .button-group.software .button {
-    color: #8555ff; 
+    color: #8555ff;
 }
 
 .button-group.links .button {
-    color: #6555ff; 
+    color: #6555ff;
 }
 
 .button-group .button:hover {
     background-color: #a88fc0;
 }
-
 
 .page {
     position: absolute;
@@ -135,22 +140,20 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    padding-left: 0px; 
+    padding-left: 0px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-
 .splash-page {
-    background-image: url('narexaxyz.png'); 
+    background-image: url('narexaxyz.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; 
+    height: 100vh;
 }
-
 
 .page-indicator {
     position: fixed;
@@ -175,7 +178,6 @@ body {
     background-color: #ad55ff;
 }
 
-
 @font-face {
     font-family: 'NohemiLight';
     src: url('MonaspaceNeon-Bold.woff2') format('opentype');
@@ -191,7 +193,6 @@ body {
     position: relative;
     z-index: 10;
 }
-
 
 .button-group.links .button {
     position: relative;
