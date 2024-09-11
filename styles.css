@@ -124,7 +124,7 @@ body {
 }
 
 .button-group .button:hover {
-    background-color: #ad55ff;
+    background-color: #a88fc0;
 }
 
 
@@ -182,4 +182,33 @@ body {
     src: url('MonaspaceNeon-Bold.woff2') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+.button-group .button {
+    pointer-events: auto;
+}
+
+.button-group.links .button {
+    position: relative;
+    z-index: 10;
+}
+
+
+.button-group.links .button {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    background-color: transparent; /* Ensuring the background color remains unchanged */
+    color: #6555ff;  /* Ensure text color stays as specified */
+    padding: 8px 12px;
+    margin: 3px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #373d3d;
+}
+
+.button-group.links .button:hover {
+    transform: translateY(-5px); /* Moves the button slightly upwards */
+    box-shadow: 0px 0px 10px 5px #ad55ff50; /* Creates a glowing shadow effect */
 }
