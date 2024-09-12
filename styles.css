@@ -1,14 +1,14 @@
 :root {
-    --background-color: #151717; /* Default background color for light mode */
-    --navbar-color: var(--background-color); /* Navbar background color matches body */
+    --background-color: #151717; 
+    --navbar-color: var(--background-color); 
 }
 
 [data-theme="dark"] {
-    --background-color: #151717; /* Dark mode background color */
-    --navbar-color: var(--background-color); /* Ensure navbar matches dark mode body color */
+    --background-color: #151717; 
+    --navbar-color: var(--background-color); 
 }
 
-/* General resets and settings */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
 
 body {
     font-family: 'NohemiLight', sans-serif;
-    background-color: var(--background-color); /* Use the custom property */
+    background-color: var(--background-color); 
 }
 
 .navbar {
@@ -25,7 +25,7 @@ body {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--navbar-color); /* Use the custom property */
+    background-color: var(--navbar-color); 
     color: rgb(255, 255, 255);
     border-radius: 25px;
     padding: 10px 20px;
@@ -33,7 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Light outline to stand out */
+    border: 2px solid rgba(255, 255, 255, 0.2); 
 }
 
 .navbar ul {
@@ -60,7 +60,7 @@ body {
     color: #ad55ff;
 }
 
-/* Other styles remain unchanged */
+
 
 .about-page {
     display: flex;
@@ -198,8 +198,8 @@ body {
     position: relative;
     z-index: 10;
     display: inline-block;
-    background-color: transparent; /* Ensuring the background color remains unchanged */
-    color: #6555ff;  /* Ensure text color stays as specified */
+    background-color: transparent; 
+    color: #6555ff;  
     padding: 8px 12px;
     margin: 3px;
     border-radius: 20px;
@@ -209,6 +209,89 @@ body {
 }
 
 .button-group.links .button:hover {
-    transform: translateY(-5px); /* Moves the button slightly upwards */
-    box-shadow: 0px 0px 10px 5px #ad55ff50; /* Creates a glowing shadow effect */
+    transform: translateY(-5px); 
+    box-shadow: 0px 0px 10px 5px #ad55ff50; 
 }
+
+/* Contact Page Styles */
+.contact-page {
+    background-color: #151717; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    max-width: 600px;
+    width: 100%;
+    background-color: #1c1f1f;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 2rem;
+    font-family: 'NohemiLight', sans-serif;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #d8d8d8;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #252929;
+    border: 1px solid #373d3d;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #ad55ff;
+    box-shadow: 0 0 8px rgba(173, 85, 255, 0.5);
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #ad55ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #9945e0;
+    box-shadow: 0 0 12px rgba(173, 85, 255, 0.5);
+}
+

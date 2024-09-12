@@ -4,6 +4,8 @@ const dots = document.querySelectorAll('.dot');
 const navLinks = document.querySelectorAll('.navbar a');
 let isScrolling = false;
 
+
+
 window.onload = () => {
     fadeInPage(currentPage);
     updateIndicators();
