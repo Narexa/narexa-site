@@ -1,13 +1,14 @@
 :root {
     --background-color: #151717; 
     --navbar-color: var(--background-color); 
+    --visitor-counter-bg: #ad55ff; 
 }
 
 [data-theme="dark"] {
     --background-color: #151717; 
     --navbar-color: var(--background-color); 
+    --visitor-counter-bg: #ad55ff; 
 }
-
 
 * {
     margin: 0;
@@ -59,8 +60,6 @@ body {
 .navbar a.active {
     color: #ad55ff;
 }
-
-
 
 .about-page {
     display: flex;
@@ -295,3 +294,16 @@ body {
     box-shadow: 0 0 12px rgba(173, 85, 255, 0.5);
 }
 
+
+.visitor-counter {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ad55ff;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'NohemiLight', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
