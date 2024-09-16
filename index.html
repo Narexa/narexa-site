@@ -7,14 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="MonaspaceNeon-Bold.woff2" rel="stylesheet">
     <link rel="icon" href="Icony.png" type="image/x-icon">
-
-
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
-    <script src="firebase-config.js" defer></script>
-
-    <script src="script.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -27,12 +19,10 @@
     </nav>
 
     <section class="page splash-page" id="page1">
-        <div class="visitor-counter" id="visitCounter">Visits: 0</div>
     </section>
 
     <section class="page about-page" id="page2">
         <div class="about-content">
-            <div class="visitor-counter" id="visitCounter">Visits: 0</div>
             <h3>LANGUAGES I USE</h3>
             <div class="button-group languages">
                 <a href="#" class="button">C#</a>
@@ -61,7 +51,6 @@
 
     <section class="page projects-page" id="page3">
         <div class="content">
-            <div class="visitor-counter" id="visitCounter">Visits: 0</div>
             <h2>My Projects</h2>
             <p>Coming Soon</p>
         </div>
@@ -69,7 +58,7 @@
 
     <section class="page contact-page" id="page4">
         <div class="content">
-            <div class="visitor-counter" id="visitCounter">Visits: 0</div>
+            <div class="visitor-counter"></div>
             <h2>Contact Me</h2>
             <h3>Coming Soon</h3>
         </div>
@@ -81,5 +70,9 @@
         <span class="dot" data-target="page3"></span>
         <span class="dot" data-target="page4"></span>
     </div>
+
+    <!-- Update the script tags to use type="module" -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>

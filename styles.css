@@ -295,16 +295,3 @@ body {
 }
 
 
-.visitor-counter {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ad55ff;
-    color: rgb(255, 255, 255);
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-family: 'NohemiLight', sans-serif;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
